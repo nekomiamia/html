@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>九宫格</title>
+<style>
+	#main{
+		width: 100%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+	#bk{
+		background-image: url("images/bg.png");
+		background-position: top;
+		background-size: cover;
+		background-color: red;
+		
+	}
+	#top{
+		background-color: black;
+		width: 100%;
+		min-width: 1500px;
+		height: 50px;
+		margin: 0;
+		color: aliceblue;
+	}
+	#logo{
+		position: relative;
+		top: 10px;
+		left: 300px;
+	}
+	#nineBox{
+		width: 1000px;
+		height: 500px;
+		margin: auto;
+		margin-top: 100px;
+	}
+	#nineBox > div{
+		float: left;
+		width: 30%;
+		height: 40%;
+		background-color: aqua;
+		margin: 5px;
+		position: relative;
+		text-align: center;
+	}
+	.text{
+		font-size: 30px;
+		color: aliceblue;
+		position: relative;
+		top: 60px;
+		margin: auto;
+		width: 120px;
+		height: 50px;
+		text-align: center;
+	}
+	#nineBox > div:hover{
+		box-shadow: 0px 0px 20px aliceblue;
+		z-index: 100;
+	}
+</style>
+</head>
+
+<body style="padding: 0;margin: 0;" id="bk">
+	<div id="main">
+		<div id="top">
+			<img src="images/xx-logo.jpg" alt="logo" id="logo">
+			<img src="images/admin.jpg" alt="head" id="logo" style="left: 1000px;top:0;">
+			<div style="padding: 0;margin: 0;position: relative;left: 1150px;top: -22px;width: 100px;">登录 | 注册</div>
+		</div>
+		<div style="padding-left: 200px;padding-right: 200px;" >
+			<div id="nineBox">
+				<div style="background-color:crimson;height: 61%">
+					<img src="images/course-icon.png" style="margin: auto;position: relative;top: 50px;">
+					<div class="text">视频</div>
+				</div>
+				<div style="background-color: aquamarine;height: 61%">
+					<img src="images/quest-icon.png" style="margin: auto;position: relative;top: 50px;">
+					<div class="text">题库</div>
+				</div>
+				<div style="background-color: aqua;height: 29%">
+					<img src="images/mryl.png" style="margin: auto;position: relative;top: 50px;left: -70px;">
+					<div class="text" style="top: 0px;left: 30px;">每日一练</div>
+				</div>
+				<div style="background-color: coral;height: 30%">
+					<img src="images/yl.png" style="margin: auto;position: relative;top: 50px;left: -70px;">
+					<div class="text" style="top: 0px;left: 30px;">真题演练</div>
+				</div>
+				<div style="background-color: darkorange;height: 30%">
+					<img src="images/forma-icon.png" style="margin: auto;position: relative;top: 50px;left: -70px;">
+					<div class="text" style="top: 0px;left: 30px;">精选试题</div>
+				</div>
+				<div style="background-color: darkblue;height: 30%">
+					<img src="images/means-icon.png" style="margin: auto;position: relative;top: 50px;left: -70px;">
+					<div class="text" style="top: 0px;left: 30px;">资料</div>
+				</div>
+				<div style="background-color:blueviolet;height: 30%">
+					<img src="images/chart.png" style="margin: auto;position: relative;top: 50px;left: -70px;">
+					<div class="text" style="top: 0px;left: 30px;">微社区</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
